@@ -5,7 +5,11 @@ using UnityEngine.AI;
 
 public class Follow : MonoBehaviour
 {
+    public timer timer;
     public NavMeshAgent agent;
+    public Transform player;
+    public Transform respawnpoint;
+    
 
     void Start()
     {
@@ -15,6 +19,23 @@ public class Follow : MonoBehaviour
   
     void Update()
     {
-        agent.destination = GameObject.FindWithTag("Player").transform.position;
+        if (timer.currenttime <= 0)
+        {
+            agent.destination = GameObject.FindWithTag("Player").transform.position;
+        }
+        else
+        {
+            agent.destination = GameObject.FindWithTag("ManagerRoom").transform.position;
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            timer.currentmoney = timer.currentmoney - 100;
+            timer.currenttime = 10f; 
+            player.position = respawnpoint.transform.position;
+            Physics.SyncTransforms();
+        }
     }
 }
