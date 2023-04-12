@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e579dc5b4fe7a428bccc831215d9b4, type: 3}
   m_Name: urso
   m_EditorClassIdentifier: 
-  name: urso
-  icon: {fileID: 0}
+  name: Urso
+  icon: {fileID: 21300000, guid: 17c438d145a8e464aa10921ce05c1363, type: 3}
   isDefaultItem: 0

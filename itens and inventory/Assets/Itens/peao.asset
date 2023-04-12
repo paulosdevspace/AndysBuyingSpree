@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: peao
   m_EditorClassIdentifier: 
   name: "Pe\xE3o"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 56cd908c19c030b4692104b01395b43b, type: 3}
   isDefaultItem: 0

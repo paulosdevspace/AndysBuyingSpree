@@ -154,6 +154,7 @@ MonoBehaviour:
   clientwait: {fileID: 7271789924775157303, guid: ef2a38901a46f7a41827f53d0c75c476, type: 3}
   interactionTransform: {fileID: 1879930666699272819}
   clientgone: {fileID: 5143148823694103456, guid: fe5291c2e4585874290be05eaa3fb8a4, type: 3}
+  wantToy: 
 --- !u!114 &8047094398521472871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,4 +171,5 @@ MonoBehaviour:
   clientwait: {fileID: 7271789924775157303, guid: ef2a38901a46f7a41827f53d0c75c476, type: 3}
   interactionTransform: {fileID: 1879930666699272819}
   clientgone: {fileID: 5143148823694103456, guid: fe5291c2e4585874290be05eaa3fb8a4, type: 3}
+  wantToy: 
   clientbehaviour: {fileID: 5343754308928331952}

@@ -8,7 +8,7 @@ public class ClientInteraction : MonoBehaviour
     public Transform clientwait;
     public Transform interactionTransform;
     public Transform clientgone;
-
+    public string toy;
 
     void OnDrawGizmosSelected()
     {
@@ -25,14 +25,16 @@ public class ClientInteraction : MonoBehaviour
         float distance = Vector3.Distance(clientwait.position, transform.position);
         if (distance <= radius)
         {
-            Debug.Log("CLIENTE ESPERANDO, APERTE R PARA ENTREGAR");
-            if (Input.GetKey("r"))
-            {
-
-                Interact();
-
-            }
+           
+                Debug.Log("O CLIENTE QUER "+ toy +", APERTE R PARA ENTREGAR");
+                if (Input.GetKey("r"))
+                {
+               
+                    //Interact();               
+                }
+           
         }
+
         float distancegone = Vector3.Distance(clientgone.position, transform.position);
         if (distancegone <= radius)
         {

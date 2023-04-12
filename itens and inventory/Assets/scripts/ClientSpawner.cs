@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ClientSpawner : MonoBehaviour
 {
+    
     public enum SpawnState { SPAWNING, WAITING, COUNTING, FINISHED};
     [System.Serializable]
     public class Wave
@@ -13,6 +14,7 @@ public class ClientSpawner : MonoBehaviour
         public Transform client;
         public int count;
         public float rate;
+        public string toywant;
     }
     public Wave[] waves;
     private int nextWave = 0;
@@ -20,8 +22,8 @@ public class ClientSpawner : MonoBehaviour
     public float timeBetweenWaves = 5f;
     public float waveCountdown;
     private float searchCountdown = 1f;
-
     private SpawnState state = SpawnState.COUNTING;
+    public ClientInteraction clientInteraction;
     void Start()
     {
         waveCountdown = timeBetweenWaves;
@@ -29,7 +31,8 @@ public class ClientSpawner : MonoBehaviour
 
     void Update()
     {
-        if(state == SpawnState.FINISHED)
+       
+        if (state == SpawnState.FINISHED)
         {
             return;
         }
@@ -50,6 +53,7 @@ public class ClientSpawner : MonoBehaviour
            if(state != SpawnState.SPAWNING)
             {
                 StartCoroutine(SpawnWave(waves[nextWave]));
+              
             } 
         }
         else
@@ -62,7 +66,6 @@ public class ClientSpawner : MonoBehaviour
         Debug.Log("Wave Completed");
         state = SpawnState.COUNTING;
         waveCountdown = timeBetweenWaves;
-
         if(nextWave +1 > waves.Length - 1)
         {
             state = SpawnState.FINISHED;
@@ -93,7 +96,7 @@ public class ClientSpawner : MonoBehaviour
     {
         Debug.Log("Spawning Wave: "+ _wave.name);
         state = SpawnState.SPAWNING;
-
+        clientInteraction.toy = _wave.toywant;
         for (int i = 0; i < _wave.count; i++)
         {
             SpawnClient(_wave.client);
@@ -106,6 +109,8 @@ public class ClientSpawner : MonoBehaviour
 
     void SpawnClient (Transform _client)
     {
+        
+        
         Instantiate (_client, transform.position, transform.rotation);
         Debug.Log("Spawning Client"+ _client.name);
     }
