@@ -1873,7 +1873,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1164205674
 GameObject:
@@ -2282,6 +2282,7 @@ GameObject:
   - component: {fileID: 1459261051}
   - component: {fileID: 1459261053}
   - component: {fileID: 1459261054}
+  - component: {fileID: 1459261055}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2362,6 +2363,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   space: 3
   item: []
+--- !u!114 &1459261055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459261050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac74c5a5cfd4514f94356df271f0a6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toyok: {fileID: 4570660930678107097, guid: 7d8a995bddb49704aa9a2b0ec6c823a2, type: 3}
+  toywt: 
 --- !u!1 &1520912379
 GameObject:
   m_ObjectHideFlags: 0
@@ -2714,7 +2729,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1597740904
 MonoBehaviour:
@@ -3055,7 +3070,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1784332274 stripped
 RectTransform:
@@ -3393,69 +3408,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe5291c2e4585874290be05eaa3fb8a4, type: 3}
---- !u!114 &6088566107274992324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6088566107274992327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f2bbf795b70e4c49acdc57b67c067af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waves:
-  - name: Karen
-    client: {fileID: 1879930666699272819, guid: 7d8a995bddb49704aa9a2b0ec6c823a2, type: 3}
-    count: 1
-    rate: 1
-    toywant: Urso
-  - name: Family
-    client: {fileID: 1879930666699272819, guid: 7d8a995bddb49704aa9a2b0ec6c823a2, type: 3}
-    count: 1
-    rate: 1
-    toywant: "Pe\xE3o"
-  - name: Kid
-    client: {fileID: 1879930666699272819, guid: 7d8a995bddb49704aa9a2b0ec6c823a2, type: 3}
-    count: 1
-    rate: 1
-    toywant: Bola
-  timeBetweenWaves: 5
-  waveCountdown: 0
-  clientInteraction: {fileID: 4570660930678107097, guid: 7d8a995bddb49704aa9a2b0ec6c823a2, type: 3}
---- !u!4 &6088566107274992325
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6088566107274992327}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 62.320797, y: 0.00000047683716, z: -51.214592}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6088566107274992327
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6088566107274992325}
-  - component: {fileID: 6088566107274992324}
-  m_Layer: 0
-  m_Name: _GM
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &6942330651792298697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3610,3 +3562,66 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef2a38901a46f7a41827f53d0c75c476, type: 3}
+--- !u!1 &7938855125327125677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7938855125327125679}
+  - component: {fileID: 7938855125327125678}
+  m_Layer: 0
+  m_Name: _GM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &7938855125327125678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938855125327125677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2bbf795b70e4c49acdc57b67c067af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toywt: {fileID: 0}
+  waves:
+  - name: Karen
+    client: {fileID: 1879930666699272819, guid: 7d8a995bddb49704aa9a2b0ec6c823a2, type: 3}
+    count: 1
+    rate: 1
+    toywant: Urso
+  - name: Family
+    client: {fileID: 1879930666699272819, guid: 7d8a995bddb49704aa9a2b0ec6c823a2, type: 3}
+    count: 1
+    rate: 1
+    toywant: "Pe\xE3o"
+  - name: Kid
+    client: {fileID: 1879930666699272819, guid: 7d8a995bddb49704aa9a2b0ec6c823a2, type: 3}
+    count: 1
+    rate: 1
+    toywant: Bola
+  timeBetweenWaves: 5
+  waveCountdown: 0
+--- !u!4 &7938855125327125679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938855125327125677}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 65.99443, y: -0.0000076293945, z: -51.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

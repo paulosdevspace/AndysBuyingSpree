@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ClientSpawner : MonoBehaviour
 {
-    
+    public toygiveaway toywt;
     public enum SpawnState { SPAWNING, WAITING, COUNTING, FINISHED};
     [System.Serializable]
     public class Wave
@@ -23,7 +23,7 @@ public class ClientSpawner : MonoBehaviour
     public float waveCountdown;
     private float searchCountdown = 1f;
     private SpawnState state = SpawnState.COUNTING;
-    public ClientInteraction clientInteraction;
+
     void Start()
     {
         waveCountdown = timeBetweenWaves;
@@ -94,12 +94,13 @@ public class ClientSpawner : MonoBehaviour
     }
     IEnumerator SpawnWave (Wave _wave)
     {
+        
         Debug.Log("Spawning Wave: "+ _wave.name);
         state = SpawnState.SPAWNING;
-        clientInteraction.toy = _wave.toywant;
         for (int i = 0; i < _wave.count; i++)
         {
             SpawnClient(_wave.client);
+            toywt.toywt = _wave.toywant;
             yield return new WaitForSeconds(1f / _wave.rate); 
         }
 
@@ -109,8 +110,6 @@ public class ClientSpawner : MonoBehaviour
 
     void SpawnClient (Transform _client)
     {
-        
-        
         Instantiate (_client, transform.position, transform.rotation);
         Debug.Log("Spawning Client"+ _client.name);
     }

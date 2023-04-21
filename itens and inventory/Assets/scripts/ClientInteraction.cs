@@ -9,7 +9,6 @@ public class ClientInteraction : MonoBehaviour
     public Transform interactionTransform;
     public Transform clientgone;
     public string toy;
-
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
@@ -19,18 +18,23 @@ public class ClientInteraction : MonoBehaviour
             interactionTransform = transform;
         }
     }
-
+    void Start()
+    {
+        toy = "not ok"; 
+    }
     void Update()
     {
+        
         float distance = Vector3.Distance(clientwait.position, transform.position);
         if (distance <= radius)
         {
-           
-                Debug.Log("O CLIENTE QUER "+ toy +", APERTE R PARA ENTREGAR");
+            
+                Debug.Log("O CLIENTE QUER, APERTE R PARA ENTREGAR");
                 if (Input.GetKey("r"))
                 {
                
-                    //Interact();               
+                   Interact();
+                                                  
                 }
            
         }
