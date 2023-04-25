@@ -9,6 +9,7 @@ public class ClientInteraction : MonoBehaviour
     public Transform interactionTransform;
     public Transform clientgone;
     public string toy;
+    public ClientSpawner toywant;
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
