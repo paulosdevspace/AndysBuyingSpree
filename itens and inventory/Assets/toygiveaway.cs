@@ -11,7 +11,7 @@ public class toygiveaway : MonoBehaviour
     {
         if (Input.GetKey("r"))
         {
-            if(inventory.item.)            
+          //  if(inventory.item.)            
         }
     }
 }
