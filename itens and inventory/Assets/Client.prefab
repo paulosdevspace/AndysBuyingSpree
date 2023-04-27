@@ -155,7 +155,7 @@ MonoBehaviour:
   interactionTransform: {fileID: 1879930666699272819}
   clientgone: {fileID: 5143148823694103456, guid: fe5291c2e4585874290be05eaa3fb8a4, type: 3}
   toy: 
-  cltspwr: {fileID: 0}
+  toywant: {fileID: 0}
 --- !u!114 &8047094398521472871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +173,5 @@ MonoBehaviour:
   interactionTransform: {fileID: 1879930666699272819}
   clientgone: {fileID: 5143148823694103456, guid: fe5291c2e4585874290be05eaa3fb8a4, type: 3}
   toy: 
-  cltspwr: {fileID: 0}
   toywant: {fileID: 0}
   clientbehaviour: {fileID: 5343754308928331952}

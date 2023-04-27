@@ -30,6 +30,7 @@ public class Follow : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("trigger");
         if (other.CompareTag("Player"))
         {
             timer.currentmoney = timer.currentmoney - 100;
