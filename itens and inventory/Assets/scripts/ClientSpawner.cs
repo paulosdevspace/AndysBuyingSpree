@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClientSpawner : MonoBehaviour
 {
-    public toygiveaway toywt;
+    //public toygiveaway toywt;
     public enum SpawnState { SPAWNING, WAITING, COUNTING, FINISHED};
     [System.Serializable]
     public class Wave
@@ -98,8 +98,8 @@ public class ClientSpawner : MonoBehaviour
         state = SpawnState.SPAWNING;
         for (int i = 0; i < _wave.count; i++)
         {
-            SpawnClient(_wave.client);
-            toywt.toywt = _wave.toywant;
+            SpawnClient(_wave.client, _wave.toywant);
+            //toywt.toywt = _wave.toywant;
             yield return new WaitForSeconds(1f / _wave.rate); 
         }
 
@@ -107,9 +107,11 @@ public class ClientSpawner : MonoBehaviour
         yield break;
     }
 
-    void SpawnClient (Transform _client)
+    void SpawnClient (Transform _client, string toyWant)
     {
-        Instantiate (_client, transform.position, transform.rotation);
+        ClientInteraction NovoCLiente = Instantiate (_client, transform.position, transform.rotation).GetComponent<ClientInteraction>();
+        NovoCLiente.toywant = toyWant;
+
         Debug.Log("Spawning Client"+ _client.name);
     }
 }
