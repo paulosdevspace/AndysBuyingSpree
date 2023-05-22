@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 3035552164282506906}
   - component: {fileID: 5343754308928331952}
   - component: {fileID: 4570660930678107097}
-  - component: {fileID: 8047094398521472871}
   m_Layer: 0
   m_Name: Client
   m_TagString: Enemy
@@ -150,28 +149,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab27df89e2578be4e9295a209eebbe26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 3
+  radius: 7
   clientwait: {fileID: 7271789924775157303, guid: ef2a38901a46f7a41827f53d0c75c476, type: 3}
   interactionTransform: {fileID: 1879930666699272819}
   clientgone: {fileID: 5143148823694103456, guid: fe5291c2e4585874290be05eaa3fb8a4, type: 3}
   toy: 
-  toywant: {fileID: 0}
---- !u!114 &8047094398521472871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3645923076684229594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd6abf65f94e3034eb07e17a02d04005, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 3
-  clientwait: {fileID: 7271789924775157303, guid: ef2a38901a46f7a41827f53d0c75c476, type: 3}
-  interactionTransform: {fileID: 1879930666699272819}
-  clientgone: {fileID: 5143148823694103456, guid: fe5291c2e4585874290be05eaa3fb8a4, type: 3}
-  toy: 
-  toywant: {fileID: 0}
-  clientbehaviour: {fileID: 5343754308928331952}
+  toywant: 
+  inventory: {fileID: 0}
+  clientbehaviour: {fileID: 0}
