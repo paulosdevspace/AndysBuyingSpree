@@ -8,6 +8,7 @@ public static class SceneGameManager
     {
         Menu,
         SampleScene,
+        OptionMenu,
     }
     public static void Load(Scene scene)
     {

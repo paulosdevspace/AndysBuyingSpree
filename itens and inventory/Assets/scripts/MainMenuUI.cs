@@ -11,6 +11,11 @@ public class MainMenuUI : MonoBehaviour
             SceneGameManager.Load(SceneGameManager.Scene.SampleScene);
         });
 
+        transform.Find("OptionsBtn").GetComponent<Button>().onClick.AddListener(() =>
+        {
+            SceneGameManager.Load(SceneGameManager.Scene.OptionMenu);
+        });
+
         transform.Find("quitBtn").GetComponent<Button>().onClick.AddListener(() =>
         {
             Application.Quit();
