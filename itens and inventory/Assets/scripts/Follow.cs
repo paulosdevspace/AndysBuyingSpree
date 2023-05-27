@@ -9,6 +9,7 @@ public class Follow : MonoBehaviour
     public NavMeshAgent agent;
     public Transform player;
     public Transform respawnpoint;
+    public Animator animator;
     
 
     void Start()
@@ -22,6 +23,7 @@ public class Follow : MonoBehaviour
         if (timer.currenttime <= 0)
         {
             agent.destination = GameObject.FindWithTag("Player").transform.position;
+            animator.SetBool("IsWalking", true);
         }
         else
         {
@@ -37,6 +39,10 @@ public class Follow : MonoBehaviour
             timer.currenttime = 10f; 
             player.position = respawnpoint.transform.position;
             Physics.SyncTransforms();
+        }
+        if (other.CompareTag("Stop"))
+        {
+            animator.SetBool("IsWalking", false);
         }
     }
 }

@@ -9,6 +9,7 @@ public class clientbehaviour : MonoBehaviour
 {
     public NavMeshAgent agent;
     public float hastoy = 0f;
+    public Animator[] animator;
     // Start is called before the first frame update
     void Start()
     {      
@@ -18,6 +19,7 @@ public class clientbehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (!ClientHasToy())
         {
             agent.destination = GameObject.FindWithTag("ClientWait").transform.position;
@@ -42,13 +44,32 @@ public class clientbehaviour : MonoBehaviour
             return true;
         }
     }
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
+        Debug.Log("testeeeeeee");
         if (other.CompareTag("ClientGone"))
         {
             Debug.Log("Cliente foi embora");
             //Destroy(gameObject);
         } 
+        if (other.CompareTag("PARA"))
+        {
+            Debug.Log("testeeeeeee");
+            foreach (Animator anim in animator)
+            {
+                anim.SetBool("IsWalking", false);
+            }
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("PARA"))
+        {
+            foreach (Animator anim in animator)
+            {
+                anim.SetBool("IsWalking", true);
+            }
+        }
     }
 }
 

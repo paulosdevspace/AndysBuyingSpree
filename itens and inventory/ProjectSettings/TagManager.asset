@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - ClientGone
   - Toy
+  - Stop
+  - PARA
   layers:
   - Default
   - TransparentFX

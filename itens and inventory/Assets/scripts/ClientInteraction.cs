@@ -37,7 +37,6 @@ public class ClientInteraction : MonoBehaviour
         if (distance <= radius)
         {
             
-                Debug.Log("O CLIENTE QUER, APERTE R PARA ENTREGAR");
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                

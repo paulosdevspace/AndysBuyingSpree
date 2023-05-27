@@ -7,6 +7,7 @@ public static class SceneGameManager
     public enum Scene
     {
         Menu,
+        CutsceneInicial,
         SampleScene,
         OptionMenu,
     }
