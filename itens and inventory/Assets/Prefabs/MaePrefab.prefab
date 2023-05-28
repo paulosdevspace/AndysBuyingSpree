@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2161569326745558688}
   m_Layer: 0
   m_Name: MaePrefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,6 +79,7 @@ MonoBehaviour:
   toywant: 
   inventory: {fileID: 0}
   clientbehaviour: {fileID: 0}
+  clientquer: {fileID: 3745282260908132138, guid: 97edc1dcfd3aa8e4db2b490fbd360bff, type: 3}
 --- !u!114 &6266467285445072248
 MonoBehaviour:
   m_ObjectHideFlags: 0

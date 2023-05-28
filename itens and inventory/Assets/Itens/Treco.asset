@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Treco
   m_EditorClassIdentifier: 
   name: Treco
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: e250f8b3266cba140953bd6794c6b6b1, type: 3}
   isDefaultItem: 0
   prefab: {fileID: 0}

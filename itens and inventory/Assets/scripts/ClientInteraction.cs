@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ClientInteraction : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class ClientInteraction : MonoBehaviour
     public string toywant;
     public Inventory inventory;
     public clientbehaviour clientbehaviour;
+    
 
 
     void OnDrawGizmosSelected()
@@ -31,13 +33,14 @@ public class ClientInteraction : MonoBehaviour
     }
     void Update()
     {
-        
+       
         float distance = Vector3.Distance(inventory.transform.position, transform.position);
         //print(distance);
         if (distance <= radius)
         {
             
-                if (Input.GetKeyDown(KeyCode.E))
+           
+            if (Input.GetKeyDown(KeyCode.E))
                 {
                
                    Interact();

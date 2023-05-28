@@ -14,6 +14,8 @@ public class timer : MonoBehaviour
     float startingmoney = 1000f;
     [SerializeField] Text CountdownText;
     [SerializeField] Text MoneyAmmount;
+    [SerializeField] Text clientwant;
+    public ClientSpawner Spawner;
     void Start()
     {
         currentmoney = startingmoney;
@@ -23,6 +25,7 @@ public class timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         currenttime -=1 *Time.deltaTime;
         CountdownText.text = currenttime.ToString("0");
         MoneyAmmount.text = currentmoney.ToString();

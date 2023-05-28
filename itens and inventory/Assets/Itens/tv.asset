@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Tv
   m_EditorClassIdentifier: 
   name: Tv
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: b73c0cce9b6162b43b0811406c2a9ccc, type: 3}
   isDefaultItem: 0
   prefab: {fileID: 0}

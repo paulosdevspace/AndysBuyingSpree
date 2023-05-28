@@ -95,6 +95,7 @@ MonoBehaviour:
   toywant: 
   inventory: {fileID: 0}
   clientbehaviour: {fileID: 0}
+  clientquer: {fileID: 3745282260908132138, guid: 97edc1dcfd3aa8e4db2b490fbd360bff, type: 3}
 --- !u!114 &8637809825447541586
 MonoBehaviour:
   m_ObjectHideFlags: 0

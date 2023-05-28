@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Domino
   m_EditorClassIdentifier: 
   name: Domino
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 7e7e403819fa27a4ca650eb282998943, type: 3}
   isDefaultItem: 0
   prefab: {fileID: 0}

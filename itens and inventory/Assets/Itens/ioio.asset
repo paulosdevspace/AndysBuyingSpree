@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Ioio
   m_EditorClassIdentifier: 
   name: Ioio
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 2dbcf8468520e5f4aa074440188a2697, type: 3}
   isDefaultItem: 0
   prefab: {fileID: 0}

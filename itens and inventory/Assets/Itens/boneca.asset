@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Boneca
   m_EditorClassIdentifier: 
   name: Boneca
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 343528e6839cf7b439754eff2419e13d, type: 3}
   isDefaultItem: 0
   prefab: {fileID: 0}
