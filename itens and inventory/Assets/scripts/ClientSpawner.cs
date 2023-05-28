@@ -99,7 +99,6 @@ public class ClientSpawner : MonoBehaviour
         for (int i = 0; i < _wave.count; i++)
         {
             SpawnClient(_wave.client, _wave.toywant);
-            //toywt.toywt = _wave.toywant;
             yield return new WaitForSeconds(1f / _wave.rate); 
         }
 
