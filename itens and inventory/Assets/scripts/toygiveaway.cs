@@ -9,9 +9,6 @@ public class toygiveaway : MonoBehaviour
     public Inventory inventory;
     void Update()
     {
-        if (Input.GetKey("r"))
-        {
-          //  if(inventory.item.)            
-        }
+
     }
 }

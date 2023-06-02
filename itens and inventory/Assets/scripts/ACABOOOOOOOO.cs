@@ -19,7 +19,7 @@ public class ACABOOOOOOOO : MonoBehaviour
     {
         if (CanGo && Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

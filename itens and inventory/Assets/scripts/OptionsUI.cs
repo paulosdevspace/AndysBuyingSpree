@@ -38,7 +38,7 @@ public class OptionsUI : MonoBehaviour
 
     private void Start()
     {
-        gameObject.SetActive(false);
+        gameObject.SetActive(true);
 
     }
 

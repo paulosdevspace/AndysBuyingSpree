@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClientSpawner : MonoBehaviour
 {
@@ -69,7 +70,8 @@ public class ClientSpawner : MonoBehaviour
         {
             state = SpawnState.FINISHED;
             Debug.Log("Você atendeu todos os clientes hoje.");
-           
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+
         }
         else
         {

@@ -2513,7 +2513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856498656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67.35, y: 3.09, z: -44.486}
+  m_LocalPosition: {x: 69.8, y: 3.09, z: -44.486}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2686,10 +2686,10 @@ RectTransform:
   m_Father: {fileID: 1049766280}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -952, y: -492}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.18728638, y: 0.4946289}
+  m_SizeDelta: {x: 108.099976, y: 92.95001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1028832919
 MonoBehaviour:
@@ -2799,9 +2799,9 @@ Canvas:
   m_GameObject: {fileID: 1049766276}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 856498659}
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2976,7 +2976,7 @@ MonoBehaviour:
     you well. I know that you have been busy recently, and I just want you to know
     that I love you. I hope your work is going nice and fun in that shop, and you
     are not so stressed with life in the big city.\r\n\nIt has been quite silent
-    without you around here\u2026\r\n\n\n\nPS. Are you eating well?\r\n\nwith love\r\n-Mom\n\n\n\n\t\t\t\tPress
+    without you around here\u2026\r\n\n\n\nPS. Are you eating well?\r\n\nwith love\r\n-Mom\n\n\t\t\t\tPress
     space to continue\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

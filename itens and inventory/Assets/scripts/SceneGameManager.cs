@@ -8,8 +8,14 @@ public static class SceneGameManager
     {
         Menu,
         CutsceneInicial,
-        SampleScene,
         OptionMenu,
+        fase1,
+        cutscene1,
+        fase2,
+        cutscene2,
+        fase3,
+        cutscenefinal,
+        
     }
     public static void Load(Scene scene)
     {
